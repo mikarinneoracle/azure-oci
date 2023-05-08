@@ -13,5 +13,5 @@ steps:
 
 - script: |
     export OCI_CLI_AUTH=instance_principal
-    oci os ns get
+    oci resource-manager job create-apply-job --stack-id ocid1.ormstack.oc1.eu-amsterdam-1.amaaaaaauevftmqac2ajso4kvixiuyajgyj3n7cljwkugaptdcyekrzumzva --execution-plan-strategy AUTO_APPROVED
   displayName: 'cli testing'
