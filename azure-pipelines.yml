@@ -20,5 +20,6 @@ steps:
     sudo su -
     cd /home/opc/azure-oci/hello-node
     fn -v deploy --app hello-node
+    exit
     echo -n '{"name":"Mika"}' | fn invoke hello-node hello-node
   displayName: 'build and deploy Hello World function with NodeJS'
