@@ -17,7 +17,8 @@ steps:
   displayName: 'cli testing'
 
 - script: |
-    cd hello-node
+    sudo su -
+    cd /home/opc/azure-oci/hello-node
     fn -v deploy --app hello-node
     echo -n '{"name":"Mika"}' | fn invoke hello-node hello-node
   displayName: 'build and deploy Hello World function with NodeJS'
