@@ -18,7 +18,7 @@ steps:
 
 # This piece expects Docker and Fn project SDK installed on the build VM
 - script: |
-    cd azure-oci/hello-node
+    cd /home/opc/azure-oci/hello-node
     fn -v deploy --app hello-node -no-bump
     echo -n '{"name":"Mika"}' | fn invoke hello-node hello-node
   displayName: 'build and deploy Hello World function with NodeJS'
